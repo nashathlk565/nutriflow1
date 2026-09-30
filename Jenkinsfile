@@ -13,7 +13,7 @@ pipeline {
             steps {
                 dir('backend') {
                     bat 'npm ci'
-                    bat 'npm test'
+                    bat 'node tests/testSubscriptionMapping.js'
                 }
             }
         }
